@@ -1,0 +1,60 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'kumbh sans';
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+    width: 1440px;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+.faq-box {
+    display: flex;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.image, .questions {
+    width: 50%;
+}
+
+h1 {
+    color: hsl(238, 29%, 16%);
+}
+
+.accordion {
+    background-color: white;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    background-color: white;
+    color: hsl(14, 88%, 65%);
+    font-weight: 700;
+}
+
+.active {
+    color: hsl(237, 12%, 33%);
+    font-weight: 700;
+}
+
+.details {
+    padding: 0 14px;
+    background-color: white;
+    color: hsl(240, 5%, 91%);
+    font-size: 12px;
+    display: none;
+    overflow: hidden;
+}
