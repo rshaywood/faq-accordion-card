@@ -9,15 +9,17 @@
     justify-content: center;
     align-items: center;
     height: 900px;
-    width: 1440px;
+    width: 100%;
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
 .faq-box {
     display: flex;
-    border-radius: 20px;
+    align-items: center;
+    border-radius: 30px;
     background-color: white;
     padding: 10px;
+    width: 60%;
 }
 
 .image, .questions {
@@ -31,7 +33,7 @@ h1 {
 .accordion {
     background-color: white;
     cursor: pointer;
-    padding: 14px;
+    padding: 14px 0 14px 0;
     width: 100%;
     text-align: left;
     border: none;
@@ -57,4 +59,18 @@ h1 {
     font-size: 12px;
     display: none;
     overflow: hidden;
+}
+
+.responsive {
+    max-width: 80%;
+    height: auto;
+    /* width: 300px; */
+}
+
+/* MOBILE SIZING */
+
+@media screen and (max-width: 375px) {
+    .container, .faq-box {
+        width: 100px;
+    }
 }
